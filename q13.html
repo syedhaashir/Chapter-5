@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supply Calculator</title>
+    <script>
+
+        function hashir(){
+            let a = document.getElementById("fav").value;
+            let c_age = +document.getElementById("c_age").value;
+            let m_age = +document.getElementById("m_age").value;
+            let amount = +document.getElementById("amount").value;
+            let total = (((m_age-c_age)*365)*amount)
+
+
+            document.write('Favourite snack: '+a+'<br>');
+            document.write('Current age: '+c_age+'<br>');
+            document.write('Max age: '+m_age+'<br>');
+            document.write('Amount of snack per day: '+amount+'<br>');
+            document.write('You will need '+total+' '+a+ ' to last you until the ripe old age of '+m_age);
+            }
+    </script>
+  </head>
+  <body>
+
+    <h1>Lifetime supply calculator</h1>
+    <p>Enter the name of your favourite snack: &nbsp;<input id="fav" min="0" type="text" /></p>
+    <p>Enter your current age: &nbsp;<input id="c_age" min="0" type="number" /></p>
+    <p>Enter your maximum age: &nbsp;<input id="m_age" min="0" type="number" /></p>
+    <p>Enter amount of snack per day: &nbsp;<input id="amount" min="0" type="number" /></p>
+    <button id="click" onclick="hashir();">Calculate</button>
+
+
+
+
+  </body>
+</html>

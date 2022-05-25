@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <script>
+
+        function hashir(){
+            let USD = +document.getElementById("USD").value;
+            let SAR = +document.getElementById("SAR").value;
+
+            document.write('1 US Dollar in PKR: 104.80'+'<br>');
+            document.write('1 Saudi Riyal in PKR: 28'+'<br><hr>');
+            document.write('Total Currency in PKR: '+ ((USD*104.80)+(SAR*28)));
+            }
+    </script>
+  </head>
+  <body>
+
+    <h1>Currency Converter</h1>
+    <p>Enter the number of US Dollar You have: &nbsp;<input id="USD" min="0" type="number" /></p>
+    <p>Enter the number of Saudi Riyal You have: &nbsp;<input id="SAR" min="0" type="number" /></p>
+    <button id="click" onclick="hashir();">Convert</button>
+
+
+
+
+  </body>
+</html>

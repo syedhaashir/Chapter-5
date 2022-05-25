@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function hashir() {
+        let a = +document.getElementById("no_it1").value;
+        let b = +document.getElementById("no_it2").value;
+        let c = a*650;
+        let d = b*100;
+        let e = c + d;
+        let f = e + 100;
+
+        document.write('Price of Item 1: 650'+'<br>');
+        document.write('Quantity of Item 1: '+a +'<br><br>');
+        document.write('Price of Item 2: 100'+'<br>');
+        document.write('Quantity of Item 2: '+b +'<br><br>');
+        document.write('Shipping Charges: 100 '+'<br><hr>');
+        document.write('Total Amount of your Order: '+e +'<br>');
+        document.write('Total Amount of your Order including shipping charges: '+f +'<br>');
+       
+      }
+    </script>
+  </head>
+  <body>
+    <h1>SHOPPING CART</h1>
+    <p>Item 1: 650 PKR</p>
+    <p>Item 2: 100 PKR</p><hr>
+    <p>Quantity of Item 1 &nbsp;<input id="no_it1" min="0" type="number" /></p>
+    <p>Quantity of Item 2 &nbsp;<input id="no_it2" min="0" type="number" /></p>
+
+    <button id="click" onclick="hashir();">Order</button>
+  </body>
+</html>

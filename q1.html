@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 1&2</title>
+    <script>
+      function hashir() {
+        let a = +document.getElementById("num1").value;
+        let b = +document.getElementById("num2").value;
+        let c = a + b;
+        let d = a - b;
+        let e = a * b;
+        let f = a / b;
+        let g = a % b;
+        document.write('Sum of '+ a + ' and '+ b +' is '+c + '<br>');
+        document.write('Subtraction of '+ a + ' and '+ b +' is '+d + '<br>');
+        document.write('Multiplication of '+ a + ' and '+ b +' is '+e + '<br>');
+        document.write('Division of '+ a + ' and '+ b +' is '+f + '<br>');
+        document.write('Modulus of '+ a + ' and '+ b +' is '+g + '<br>');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Enter Number 1:<input id="num1" type="number" /></p>
+    <p>Enter Number 2:<input id="num2" type="number" /></p>
+    <button id="click" onclick="hashir();">Click Me</button>
+  </body>
+</html>

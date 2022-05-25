@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <script>
+
+        function hashir(){
+            let c_year = +document.getElementById("c_year").value;
+            let b_year = +document.getElementById("b_year").value;
+            let age = c_year-b_year
+            document.write('Current Year: '+c_year+'<br>');
+            document.write('Birth Year: '+b_year+'<br><hr>');
+            document.write('Your Age is '+ age);
+            }
+    </script>
+  </head>
+  <body>
+
+    <h1>Age Calculator</h1>
+    <p>Enter the current year: &nbsp;<input id="c_year" min="0" type="number" /></p>
+    <p>Enter your birth year: &nbsp;<input id="b_year" min="0" type="number" /></p>
+    <button id="click" onclick="hashir();">Convert</button>
+
+
+
+
+  </body>
+</html>

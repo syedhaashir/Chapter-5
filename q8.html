@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percentage Calculator</title>
+    <script>
+
+      function hashir() {
+        let a = +document.getElementById("m_obt").value;
+        let b = +document.getElementById("total").value;
+        let c = (a/b)*100;
+        
+    
+        document.write('Marks You Obtained: '+a+'<br>');
+        document.write('Total Marks: '+b +'<br><br>');
+        document.write('Your Percentage: '+c+'%'+'<br>');  
+      }
+
+    </script>
+  </head>
+
+  <body>
+
+    <h1>Percentage Calculator</h1>
+    <p>Obtained Marks: &nbsp;<input id="m_obt" min="0" type="number" /></p>
+    <p>Total Marks: &nbsp;<input id="total" min="0" type="number" /></p>
+    <button id="click" onclick="hashir();">Calculate</button>
+
+  </body>
+</html>
